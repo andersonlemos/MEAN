@@ -2,8 +2,6 @@
 var express = require('express');
 var load = require('express-load');
 
-//var home = require ('../app/routes/home');
-
 //exporta o modulo express
 module.exports = function() {
     var app = express();
@@ -17,7 +15,7 @@ module.exports = function() {
     app.set('view engine','ejs');
     app.set('views','./app/views');
     
-//    home(app);
+
     load('models',{cwd:'app'})
         .then('controllers')
         .then('routes')
