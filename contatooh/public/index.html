@@ -5,11 +5,15 @@
         <meta charset="utf-8">
         <title></title>
     </head>
-    <body>
+    <body ng-controller="contatosController">
+        
         <h1>Bem-vindo ao contatooh!</h1>
-        <button>Novo</button>
+        <button ng-click="incrementa()">Novo</button>
         <p>Contatos cadastrados: {{total}}</p>
+        
         <script src="vendor/angular/angular.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/contatosController.js"></script>
+        
     </body>
 </html>
