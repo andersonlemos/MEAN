@@ -4,6 +4,7 @@ var contatos = [{_id:1,nome:'Contato 1',email:'contato1@contatooh.com'},
                ];
 
 module.exports = function (){
+    
     var controller = {};
     
     controller.listaContatos  = function(req,res){
@@ -25,5 +26,6 @@ module.exports = function (){
         
         res.status(404).send('Contato não encontrado!');
     };
+    
     return controller;
 }

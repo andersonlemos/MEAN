@@ -3,17 +3,18 @@
     <head>
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
+       
         <title></title>
     </head>
-    <body ng-controller="contatosController">
-        
-        <h1>Bem-vindo ao contatooh!</h1>
-        <button ng-click="incrementa()">Novo</button>
-        <p>Contatos cadastrados: {{total}}</p>
-        
+    <body>
+     
+        <div ng-view></div>
+ 
         <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-route/angular-route.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/contatosController.js"></script>
-        
+        <script src="js/controllers/ContatosController.js"></script>
+        <script src="js/controllers/ContatoController.js"></script>
     </body>
+    
 </html>
