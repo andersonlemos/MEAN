@@ -15,7 +15,7 @@
         <tr ng-repeat="contato in contatos | filter:filtro">
             <td><a>{{contato.nome}}</a></td>
             <td><a>{{contato.email}}</a></td>
-            <td class="text-center"><button class="btn btn-warning">Remover</button></td>
+            <td class="text-center"><button ng-click="remove(contato)" class="btn btn-warning">Remover</button></td>
         </tr>           
     </table>
 </div>
