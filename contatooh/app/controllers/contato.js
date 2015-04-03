@@ -28,5 +28,12 @@ module.exports = function (){
         res.status(404).send('Contato não encontrado!');
     };
     
+    
+    controller.removeContato=function(req,res){
+        var idContato = req.params.id;
+        console.log('API: removeContato: ' + idContato);
+    };
+    
+    
     return controller;
 }

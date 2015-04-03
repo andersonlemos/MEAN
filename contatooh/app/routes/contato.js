@@ -3,5 +3,5 @@ module.exports = function (app){
     
     app.get('/contatos',controller.listaContatos);
     app.get('/contatos/:id',controller.obtemContato);
-    
+    app.delete('/contatos/:id',controller.removeContato);
 }
