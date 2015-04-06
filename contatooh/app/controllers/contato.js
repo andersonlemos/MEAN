@@ -1,7 +1,7 @@
-var contatos = [{id: 1, nome: 'Contato 1', email: 'contato1@contatooh.com'},
-                {id: 2, nome: 'Contato 2', email: 'contato2@contatooh.com'},
-                {id: 3, nome: 'Contato 3', email: 'contato3@contatooh.com'},
-                {id: 4, nome: 'Contato 4', email: 'contato4@contatooh.com'}
+var contatos = [{_id: 1, nome: 'Contato 1', email: 'contato1@contatooh.com'},
+                {_id: 2, nome: 'Contato 2', email: 'contato2@contatooh.com'},
+                {_id: 3, nome: 'Contato 3', email: 'contato3@contatooh.com'},
+                {_id: 4, nome: 'Contato 4', email: 'contato4@contatooh.com'}
                ];
 
 module.exports = function () {
@@ -29,16 +29,16 @@ module.exports = function () {
     };
     
     
-    controller.removeContato = function(req,res){
-        var idContato = req.params.id;
-         var contato = contatos.filter(function(contato){
-            
-            return contatos._id != idContato;
-            
-        });
-        
-        res.status(204).end();
-    };
+     controller.removeContato = function(req, res) {
+
+    var idContato = req.params.id;
+         
+    contatos = contatos.filter(function(contato) {
+        return contato._id != idContato;
+    });
+         
+    res.status(204).end();
+  };
     
     
     return controller;
