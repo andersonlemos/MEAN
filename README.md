@@ -1,8 +1,8 @@
-#Mean: Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node
-#Flávio Almeida
-#http://www.casadocodigo.com.br/products/livro-mean
+#Mean: Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node - Flávio Almeida
+http://www.casadocodigo.com.br/products/livro-mean
 
-#Fedora 21 -Kernel 3.19.7-200.fc21.x86_64
+Fedora 21 -Kernel 3.19.7-200.fc21.x86_64
+
 #mongodb installation instructions
 
 #Pre-Flight Check
