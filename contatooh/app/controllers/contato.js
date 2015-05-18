@@ -24,7 +24,7 @@ module.exports = function(app) {
     
     controller.obtemContato = function(req,res){
         
-        var _id= req.params.Id;
+        var _id= req.params.id;
         
         Contato.findById(_id).exec()
                .then(
@@ -46,7 +46,7 @@ module.exports = function(app) {
         
         var _id= req.params.id;
         
-        Contato.remove({id:_id}).exec()
+        Contato.remove({"_id":_id}).exec()
                .then(
                 function(){
                     res.end()
