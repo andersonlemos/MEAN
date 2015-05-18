@@ -16,4 +16,12 @@ module.exports = function(uri){
        console.log('Mongoose erro na conexao em : ' + erro); 
     });
     
+    process.on('SIGINT',function(){
+                mongoose.connection.close(function(){
+                    console.log('Mongoose desconectado pelo término da aplicação!');
+                    process.exit(0);
+                });
+        
+    });
+    mongoose.set('debug',true);
 }
